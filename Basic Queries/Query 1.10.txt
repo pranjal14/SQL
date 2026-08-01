@@ -1,1 +1,8 @@
 How can we find duplicate records in a table?
+
+Sample Answer: To identify duplicate records, we can use the GROUP BY clause and the HAVING clause to filter groups that have more than one occurrence. For instance, to find employees with the same name:
+
+SELECT name, COUNT(*) AS count
+FROM employees
+GROUP BY name
+HAVING COUNT(*) > 1;
