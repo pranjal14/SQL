@@ -1,0 +1,1 @@
+How can we find duplicate records in a table?
