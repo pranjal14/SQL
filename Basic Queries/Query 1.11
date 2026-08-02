@@ -1,2 +1,6 @@
 
 How to get sales data for the last 30 days?
+
+SELECT *
+FROM sales
+WHERE sale_date >= CURDATE() - INTERVAL 30 DAY;
