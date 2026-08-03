@@ -1,3 +1,4 @@
 1. Write SQL Query to Display FIRST_NAME with Alias WORKER_NAME.
 An alias is a user-friendly label for a column in the SQL table. Use the ‘As’ clause to specify the alias in the query.
 
+Select FIRST_NAME AS WORKER_NAME from Worker;
