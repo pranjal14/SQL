@@ -8,3 +8,4 @@ Select upper(FIRST_NAME) from Worker;
 
 3. Write SQL Query to Display Unique DEPARTMENT Values from the Worker Table.
 Use the DISTINCT keyword to list the unique values of a SQL table column removing the duplicates.
+Select distinct DEPARTMENT from Worker;
