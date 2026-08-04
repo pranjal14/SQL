@@ -5,3 +5,6 @@ Select FIRST_NAME AS WORKER_NAME from Worker;
 2. Write SQL Query to Display FIRST_NAME in Upper Case from the Worker Table.
 SQL provides string functions to change the case. In this case, you can call the upper() function.
 Select upper(FIRST_NAME) from Worker;
+
+3. Write SQL Query to Display Unique DEPARTMENT Values from the Worker Table.
+Use the DISTINCT keyword to list the unique values of a SQL table column removing the duplicates.
