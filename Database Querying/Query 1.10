@@ -9,3 +9,8 @@ Select upper(FIRST_NAME) from Worker;
 3. Write SQL Query to Display Unique DEPARTMENT Values from the Worker Table.
 Use the DISTINCT keyword to list the unique values of a SQL table column removing the duplicates.
 Select distinct DEPARTMENT from Worker;
+
+
+4. Write SQL Query to Display the First 3 Chars of FIRST_NAME from the Worker Table.
+As mentioned earlier, SQL supports inline string operations like SUBSTRING(). Use this function on the column name to extract a part of it.
+Select substring(FIRST_NAME,1,3) from Worker;
