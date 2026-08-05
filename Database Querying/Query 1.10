@@ -22,3 +22,7 @@ SELECT INSTR(FIRST_NAME, 'a') FROM Worker WHERE FIRST_NAME = 'Amitabh';
 6. Write SQL Query to Fetch FIRST_NAME from the Worker Table With No White Spaces on the Right.
 SQL has functions to clean up text, like removing extra spaces. To get rid of spaces on the right side of a name, you can use the RTRIM() function.
 Select RTRIM(FIRST_NAME) from Worker;
+
+7. Write SQL Query to List DEPARTMENT from the Worker Table With No White Spaces on the Left.
+To get rid of spaces on the left side of a value, you can use the LTRIM() function. Now, try creating the query yourself
+Select LTRIM(DEPARTMENT) from Worker;
