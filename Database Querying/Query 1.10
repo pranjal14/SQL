@@ -18,3 +18,7 @@ Select substring(FIRST_NAME,1,3) from Worker;
 5. Write SQL Query to Find the Position of Alphabet ‘a’ in the FIRST_NAME Column.
 SQL lets you work with text directly using functions like POSITION() or INSTR(). You can use these to find where a specific letter shows up in a word.
 SELECT INSTR(FIRST_NAME, 'a') FROM Worker WHERE FIRST_NAME = 'Amitabh';
+
+6. Write SQL Query to Fetch FIRST_NAME from the Worker Table With No White Spaces on the Right.
+SQL has functions to clean up text, like removing extra spaces. To get rid of spaces on the right side of a name, you can use the RTRIM() function.
+Select RTRIM(FIRST_NAME) from Worker;
