@@ -34,3 +34,7 @@ SELECT DISTINCT DEPARTMENT, LENGTH(DEPARTMENT) AS Department_Length FROM Worker;
 9. Write SQL Query to Replace ‘a’ with ‘A’ in FIRST_NAME from the Worker Table.
 If you want to swap all lowercase ‘a’s with uppercase ‘A’s in the first names, you can use the REPLACE() function. Give it a try yourself.
 Select REPLACE(FIRST_NAME,'a','A') from Worker;
+
+10. Write SQL Query to Combine FIRST_NAME and LAST_NAME into COMPLETE_NAME.
+To join the first and last names with a space in between, you can use the || operator, which works like a glue for text in SQL. You can also use MySQL CONCAT() function.
+SELECT FIRST_NAME || ' ' || LAST_NAME AS COMPLETE_NAME FROM Worker;
