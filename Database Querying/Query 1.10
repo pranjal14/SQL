@@ -26,3 +26,7 @@ Select RTRIM(FIRST_NAME) from Worker;
 7. Write SQL Query to List DEPARTMENT from the Worker Table With No White Spaces on the Left.
 To get rid of spaces on the left side of a value, you can use the LTRIM() function. Now, try creating the query yourself
 Select LTRIM(DEPARTMENT) from Worker;
+
+8. Write SQL Query to Display Unique DEPARTMENT Values and Their Lengths from the Worker Table.
+To get unique department names and see how many characters each has, you can use DISTINCT for uniqueness and LENGTH() to count the characters.
+SELECT DISTINCT DEPARTMENT, LENGTH(DEPARTMENT) AS Department_Length FROM Worker;
