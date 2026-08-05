@@ -30,3 +30,7 @@ Select LTRIM(DEPARTMENT) from Worker;
 8. Write SQL Query to Display Unique DEPARTMENT Values and Their Lengths from the Worker Table.
 To get unique department names and see how many characters each has, you can use DISTINCT for uniqueness and LENGTH() to count the characters.
 SELECT DISTINCT DEPARTMENT, LENGTH(DEPARTMENT) AS Department_Length FROM Worker;
+
+9. Write SQL Query to Replace ‘a’ with ‘A’ in FIRST_NAME from the Worker Table.
+If you want to swap all lowercase ‘a’s with uppercase ‘A’s in the first names, you can use the REPLACE() function. Give it a try yourself.
+Select REPLACE(FIRST_NAME,'a','A') from Worker;
