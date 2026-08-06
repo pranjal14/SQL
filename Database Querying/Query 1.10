@@ -38,3 +38,7 @@ Select REPLACE(FIRST_NAME,'a','A') from Worker;
 10. Write SQL Query to Combine FIRST_NAME and LAST_NAME into COMPLETE_NAME.
 To join the first and last names with a space in between, you can use the || operator, which works like a glue for text in SQL. You can also use MySQL CONCAT() function.
 SELECT FIRST_NAME || ' ' || LAST_NAME AS COMPLETE_NAME FROM Worker;
+
+11. Write SQL Query to Print Worker Details Ordered by FIRST_NAME Ascending and DEPARTMENT Descending.
+To get all the worker details sorted by their first names in alphabetical order, you can use the ORDER BY clause with ASC (which means ascending). Try to write it down now.
+Select * from Worker order by FIRST_NAME asc;
