@@ -42,3 +42,7 @@ SELECT FIRST_NAME || ' ' || LAST_NAME AS COMPLETE_NAME FROM Worker;
 11. Write SQL Query to Print Worker Details Ordered by FIRST_NAME Ascending and DEPARTMENT Descending.
 To get all the worker details sorted by their first names in alphabetical order, you can use the ORDER BY clause with ASC (which means ascending). Try to write it down now.
 Select * from Worker order by FIRST_NAME asc;
+
+12. Write SQL Query to Print Worker Details Ordered by FIRST_NAME Ascending and DEPARTMENT Descending.
+To sort by two columns—first by FIRST_NAME in alphabetical order and then by DEPARTMENT in reverse order—you can use the ORDER BY clause and specify ASC for ascending and DESC for descending.
+Select * from Worker order by FIRST_NAME asc, DEPARTMENT desc;
