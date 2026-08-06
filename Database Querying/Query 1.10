@@ -46,3 +46,16 @@ Select * from Worker order by FIRST_NAME asc;
 12. Write SQL Query to Print Worker Details Ordered by FIRST_NAME Ascending and DEPARTMENT Descending.
 To sort by two columns—first by FIRST_NAME in alphabetical order and then by DEPARTMENT in reverse order—you can use the ORDER BY clause and specify ASC for ascending and DESC for descending.
 Select * from Worker order by FIRST_NAME asc, DEPARTMENT desc;
+
+
+13. Write SQL Query to Print Worker Details with First Names “Vipul” and “Satish”.
+To get details for workers with specific first names, you can use the IN operator to check for multiple values.
+Select * from Worker where FIRST_NAME in ('Vipul','Satish');
+
+14. Write SQL Query to Print Worker Details Excluding First Names (“Vipul” and “Satish”).
+To get details of workers except for those with specific first names, you can use the NOT IN operator to exclude certain values.
+Select * from Worker where FIRST_NAME not in ('Vipul','Satish');
+
+15. Write SQL Query to Print Worker Details with DEPARTMENT Name as “Admin”.
+If you want to search for workers in a department that contains ‘Admin’ (in any part of the name), you can use LIKE with % to match any characters before or after ‘Admin’.
+Select * from Worker where DEPARTMENT like 'Admin%';
