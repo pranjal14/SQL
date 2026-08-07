@@ -63,3 +63,7 @@ Select * from Worker where DEPARTMENT like 'Admin%';
 16. Write SQL Query to Print Worker Details Whose FIRST_NAME Contains ‘a’.
 Again, to find workers whose first name contains the letter ‘a’, you can use the LIKE operator with % to match any part of the name.
 Select * from Worker where FIRST_NAME like '%a%';
+
+17. Write SQL Query to List Worker Info Whose FIRST_NAME Ends with ‘a’.
+The logic here is similar to the last query, but now we’re looking for names that end with ‘a’. The % symbol is placed before ‘a’ to match anything that comes before it.
+Select * from Worker where FIRST_NAME like '%a';
