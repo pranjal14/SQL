@@ -67,3 +67,7 @@ Select * from Worker where FIRST_NAME like '%a%';
 17. Write SQL Query to List Worker Info Whose FIRST_NAME Ends with ‘a’.
 The logic here is similar to the last query, but now we’re looking for names that end with ‘a’. The % symbol is placed before ‘a’ to match anything that comes before it.
 Select * from Worker where FIRST_NAME like '%a';
+
+18. Write SQL Query to Fetch Workers Whose FIRST_NAME Ends with ‘h’ and Has 6 Letters.
+To find workers whose first name ends with ‘h’ and has exactly six characters, we can use LIKE to match the pattern and LENGTH to check the number of characters.
+Select * from Worker where FIRST_NAME like '_____h' AND LENGTH(FIRST_NAME) = 6;
