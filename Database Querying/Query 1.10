@@ -71,3 +71,7 @@ Select * from Worker where FIRST_NAME like '%a';
 18. Write SQL Query to Fetch Workers Whose FIRST_NAME Ends with ‘h’ and Has 6 Letters.
 To find workers whose first name ends with ‘h’ and has exactly six characters, we can use LIKE to match the pattern and LENGTH to check the number of characters.
 Select * from Worker where FIRST_NAME like '_____h' AND LENGTH(FIRST_NAME) = 6;
+
+19. Write SQL Query to Show Worker Info Whose SALARY is Between 100000 & 500000.
+To find workers whose salary is between 100,000 and 500,000, you can use the BETWEEN operator, which is great for checking ranges.
+Select * from Worker where SALARY between 100000 and 500000;
