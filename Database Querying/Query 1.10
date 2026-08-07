@@ -75,3 +75,7 @@ Select * from Worker where FIRST_NAME like '_____h' AND LENGTH(FIRST_NAME) = 6;
 19. Write SQL Query to Show Worker Info Whose SALARY is Between 100000 & 500000.
 To find workers whose salary is between 100,000 and 500,000, you can use the BETWEEN operator, which is great for checking ranges.
 Select * from Worker where SALARY between 100000 and 500000;
+
+20. Write SQL Query to Display Workers Who Joined in Feb 2021.
+To find workers who joined in February 2021, you can use the WHERE clause with a DATE comparison using strftime() to match that specific month and year.
+SELECT * FROM Worker WHERE strftime('%Y', JOINING_DATE) = '2021' AND strftime('%m', JOINING_DATE) = '02';
