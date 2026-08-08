@@ -83,3 +83,11 @@ SELECT * FROM Worker WHERE strftime('%Y', JOINING_DATE) = '2021' AND strftime('%
 21. Write SQL Query to Print Employee Count in ‘Admin’ Department.
 To find the count of employees working in the ‘Admin’ department, you can use the COUNT function to count rows that match the department.
 SELECT COUNT(*) FROM Worker WHERE DEPARTMENT = 'Admin';
+
+22. Write SQL Query to Fetch Worker Names with Salaries >= 50000 and <= 100000.
+The required query is:
+SELECT FIRST_NAME || ' ' || LAST_NAME AS Worker_Name, Salary FROM Worker WHERE Salary BETWEEN 50000 AND 100000;
+
+23. Write SQL Query to List Worker Count Per Department in Descending Order.
+The required query is:
+SELECT DEPARTMENT, count(WORKER_ID) No_Of_Workers FROM Worker GROUP BY DEPARTMENT ORDER BY No_Of_Workers DESC;
