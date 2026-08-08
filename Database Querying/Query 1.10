@@ -79,3 +79,7 @@ Select * from Worker where SALARY between 100000 and 500000;
 20. Write SQL Query to Display Workers Who Joined in Feb 2021.
 To find workers who joined in February 2021, you can use the WHERE clause with a DATE comparison using strftime() to match that specific month and year.
 SELECT * FROM Worker WHERE strftime('%Y', JOINING_DATE) = '2021' AND strftime('%m', JOINING_DATE) = '02';
+
+21. Write SQL Query to Print Employee Count in ‘Admin’ Department.
+To find the count of employees working in the ‘Admin’ department, you can use the COUNT function to count rows that match the department.
+SELECT COUNT(*) FROM Worker WHERE DEPARTMENT = 'Admin';
