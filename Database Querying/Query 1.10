@@ -95,3 +95,7 @@ SELECT DEPARTMENT, count(WORKER_ID) No_Of_Workers FROM Worker GROUP BY DEPARTMEN
 24. Write SQL Query to Print Worker Details Who Are Also Managers.
 The required query is:
 SELECT DISTINCT W.FIRST_NAME, T.WORKER_TITLE FROM Worker W INNER JOIN Title T ON W.WORKER_ID = T.WORKER_REF_ID AND T.WORKER_TITLE in ('Manager');
+
+25. Write SQL Query to Fetch Duplicate Records with Matching Data in Specific Fields of a Table.
+The required query is:
+SELECT WORKER_TITLE, AFFECTED_FROM, COUNT(*) FROM Title GROUP BY WORKER_TITLE, AFFECTED_FROM HAVING COUNT(*) > 1;
