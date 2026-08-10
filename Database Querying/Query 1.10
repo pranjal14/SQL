@@ -103,3 +103,7 @@ SELECT WORKER_TITLE, AFFECTED_FROM, COUNT(*) FROM Title GROUP BY WORKER_TITLE, A
 26. Write SQL Query to Show Only Odd Rows from a Table.
 The required query is:
 SELECT * FROM Worker WHERE WORKER_ID % 2 <> 0;
+
+27. Write SQL Query to Show Only Even Rows from a Table.
+The required query is:
+SELECT * FROM Worker WHERE WORKER_ID % 2 = 0;
