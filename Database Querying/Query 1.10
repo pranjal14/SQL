@@ -107,3 +107,15 @@ SELECT * FROM Worker WHERE WORKER_ID % 2 <> 0;
 27. Write SQL Query to Show Only Even Rows from a Table.
 The required query is:
 SELECT * FROM Worker WHERE WORKER_ID % 2 = 0;
+
+28. Write SQL Query to Clone a New Table from Another Table.
+The general query to clone a table with data is:
+CREATE TABLE WorkerClone AS SELECT * FROM Worker;
+
+29. Write SQL Query to Display Intersecting Records of Two Tables.
+The required query is:
+SELECT * FROM Worker INTERSECT SELECT * FROM WorkerClone;
+
+30. Write SQL Query to Show Records from One Table That Are Not Present in Another Table.
+The required query is:
+SELECT * FROM Worker EXCEPT SELECT * FROM WorkerClone;
