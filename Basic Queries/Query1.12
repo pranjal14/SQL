@@ -7,3 +7,9 @@ SQL:
 SELECT table1.column_name1, table1.column_name2, table2.column_name1, table2.column_name2 FROM table1
 INNER JOIN table2
 ON table1.column_name = table2.column_name
+
+For example, there are two tables Users and Cities with the following data: Let's say you want to retrieve a list of users and their respective city names. You can achieve this using the INNER JOIN query.
+SQL:
+SELECT users.firstName, users.lastName, users.age, cities.name as cityName FROM users
+INNER JOIN cities
+ON users.cityId = cities.id
