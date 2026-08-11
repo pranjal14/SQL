@@ -13,3 +13,10 @@ SQL:
 SELECT users.firstName, users.lastName, users.age, cities.name as cityName FROM users
 INNER JOIN cities
 ON users.cityId = cities.id
+
+
+LEFT JOIN returns all the rows from the left table (table 1) and the matched rows from the right table (table 2). If no matching rows exist in the right table (table 2), then NULL values are returned. The SQL syntax for a Left join is shown in the code snippet below.
+SQL:
+SELECT table1.column_name1, table1.column_name2, table2.column_name1, table2.column_name2 FROM table1
+LEFT JOIN table2
+ON table1.column_name = table2.column_name 
