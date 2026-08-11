@@ -3,3 +3,7 @@ What is the difference between INNER JOIN and LEFT JOIN?
 A JOIN combines data from two or more tables based on a related column between them. It is useful when you need to retrieve data spread across multiple tables in relational database management systems.
 
 An INNER JOIN returns only rows with a match in both tables based on the specified join condition. If there are no matching rows, there will be no results. The SQL syntax for an INNER JOIN is shown in the code snippet below.
+SQL:
+SELECT table1.column_name1, table1.column_name2, table2.column_name1, table2.column_name2 FROM table1
+INNER JOIN table2
+ON table1.column_name = table2.column_name
