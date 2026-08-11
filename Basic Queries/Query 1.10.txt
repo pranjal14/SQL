@@ -14,3 +14,8 @@ FROM Users
 GROUP BY Age
 HAVING COUNT(Age) > 1
 
+Handling multi-column (composite) duplicates is similar to handling single-column duplicates.
+SELECT FirstName, LastName, COUNT(*) AS dup_count
+FROM Users
+GROUP BY FirstName, LastName
+HAVING COUNT(*) > 1;
