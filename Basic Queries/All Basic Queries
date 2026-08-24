@@ -1,1 +1,8 @@
 
+1 - How to find duplicate records?
+SELECT 
+    user_id,
+    COUNT(*) AS duplicate_count
+FROM customer_data
+GROUP BY user_id
+HAVING COUNT(*) > 1;
