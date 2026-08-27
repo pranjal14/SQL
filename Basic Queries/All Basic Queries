@@ -19,3 +19,6 @@ WHERE user_id IN (
 
 
 3 - How to get sales data for the last 30 days?
+SELECT *
+FROM sales
+WHERE sale_date >= CURRENT_DATE - INTERVAL '30 days';
