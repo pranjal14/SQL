@@ -16,3 +16,6 @@ WHERE user_id IN (
     GROUP BY user_id
     HAVING COUNT(*) > 1
 );
+
+
+3 - How to get sales data for the last 30 days?
