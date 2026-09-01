@@ -22,3 +22,5 @@ WHERE user_id IN (
 SELECT *
 FROM sales
 WHERE sale_date >= CURRENT_DATE - INTERVAL '30 days';
+
+4 - Write a query to find the second highest salary from a table
