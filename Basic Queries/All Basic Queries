@@ -32,3 +32,6 @@ SELECT DISTINCT salary
 FROM employees
 ORDER BY salary DESC
 LIMIT 1 OFFSET 1;
+
+
+5 - Write SQL Query to Display the First 3 Chars of FIRST_NAME from the Table.
