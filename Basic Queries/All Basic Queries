@@ -42,3 +42,4 @@ FROM table_name;
 SELECT FIRST_NAME, INSTR(FIRST_NAME, 'a') 
 FROM EMPLOYEE;
 
+7 - Write SQL Query to Replace ‘a’ with ‘A’ in FIRST_NAME from the Table.
