@@ -41,3 +41,4 @@ FROM table_name;
 6 - Write SQL Query to Find the Position of Alphabet ‘a’ in the FIRST_NAME Column.
 SELECT FIRST_NAME, INSTR(FIRST_NAME, 'a') 
 FROM EMPLOYEE;
+
