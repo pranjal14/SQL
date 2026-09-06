@@ -45,3 +45,5 @@ FROM EMPLOYEE;
 7 - Write SQL Query to Replace ‘a’ with ‘A’ in FIRST_NAME from the Table.
 SELECT REPLACE(FIRST_NAME, 'a', 'A') AS FIRST_NAME
 FROM TABLE_NAME;
+
+8 - Write SQL Query to Fetch people Whose FIRST_NAME Ends with ‘h’ and Has 6 Letters.
