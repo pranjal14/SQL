@@ -50,3 +50,5 @@ FROM TABLE_NAME;
 SELECT *
 FROM your_table
 WHERE FIRST_NAME LIKE '_____h';
+
+9 - Write SQL Query to Show Only Odd Rows from a Table.
