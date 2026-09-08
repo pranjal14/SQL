@@ -55,3 +55,5 @@ WHERE FIRST_NAME LIKE '_____h';
 SELECT *
 FROM table_name
 WHERE MOD(id, 2) = 1;
+
+10 - Write SQL Query to Show Only Even Rows from a Table.
