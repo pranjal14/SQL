@@ -60,3 +60,5 @@ WHERE MOD(id, 2) = 1;
 SELECT *
 FROM employee
 WHERE MOD(id, 2) = 0;
+
+11 - Write SQL Query to Show the Current Date and Time.
