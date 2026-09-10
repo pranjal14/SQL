@@ -68,3 +68,6 @@ OR
 SELECT CURRENT_TIMESTAMP() AS CURRENT_DATE_TIME;
 
 12 - Write SQL Query to Show the Top n (say 10) Records of a Table.
+SELECT *
+FROM table_name
+LIMIT 10;
