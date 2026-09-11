@@ -73,3 +73,7 @@ FROM table_name
 LIMIT 10;
 
 13 - Write SQL Query to Determine the Nth (say n=5) Highest Salary.
+SELECT DISTINCT salary
+FROM employee
+ORDER BY salary DESC
+LIMIT 1 OFFSET 4;
