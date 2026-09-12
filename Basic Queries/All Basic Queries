@@ -78,3 +78,10 @@ FROM employee
 ORDER BY salary DESC
 LIMIT 1 OFFSET 4;
 
+SELECT id, name
+FROM employee
+
+UNION ALL
+
+SELECT id, name
+FROM employee;
