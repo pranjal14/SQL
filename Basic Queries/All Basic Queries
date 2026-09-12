@@ -78,10 +78,9 @@ FROM employee
 ORDER BY salary DESC
 LIMIT 1 OFFSET 4;
 
+14 - Write SQL Query to Display One Row Twice in the Results from a Table.
 SELECT id, name
 FROM employee
-
 UNION ALL
-
 SELECT id, name
 FROM employee;
