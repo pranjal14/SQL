@@ -84,3 +84,5 @@ FROM employee
 UNION ALL
 SELECT id, name
 FROM employee;
+
+15 - Write a query to find the number of employees in each department.
