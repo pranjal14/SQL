@@ -86,3 +86,6 @@ SELECT id, name
 FROM employee;
 
 15 - Write a query to find the number of employees in each department.
+SELECT department, COUNT(*) AS employee_count
+FROM employees
+GROUP BY department;
