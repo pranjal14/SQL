@@ -1,1 +1,2 @@
 
+From the following table, write a SQL query to find the marks, which appear at least thrice one after another without interruption. Return the number.
