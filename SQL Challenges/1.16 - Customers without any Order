@@ -1,5 +1,5 @@
 
-
+From the following tables, write a SQL query to find those  customers who never ordered anything. Return  customer name
 
 CREATE TABLE IF NOT EXISTS customers (customer_id int, customer_name varchar(255));
 TRUNCATE TABLE customers;
