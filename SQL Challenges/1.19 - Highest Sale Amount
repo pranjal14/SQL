@@ -1,1 +1,3 @@
 
+A salesperson is a person whose job is to sell products or services.
+From the following tables, write a SQL query to find the top 10 salesperson that have made highest sale. Return their names and total sale amount.
