@@ -1,1 +1,2 @@
 
+From the following table, write a SQL query to find those students who have referred by the teacher whose id not equal to 602. Return the student names.
