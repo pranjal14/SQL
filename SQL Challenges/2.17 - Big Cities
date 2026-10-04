@@ -1,1 +1,5 @@
 
+A city is big if it has an area bigger than 50K square km or a population of more than 15 million.
+From the following table, write a SQL query to find big cities name, population and area.
+
+Input:
