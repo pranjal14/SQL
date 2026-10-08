@@ -1,0 +1,6 @@
+A renowned doctor meets patient party in a famous clinic in the city.
+From the following table write a SQL query to know the availability of the doctor for consecutive 2 or more days. Return visiting days.
+
+Note:
+The availability of doctor is boolean type. ('1' means available, and '0' means not available.).
+Consecutive available seats are more than 2(inclusive) seats consecutively available.
