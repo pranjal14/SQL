@@ -1,1 +1,3 @@
 
+Table students contain marks of mathematics for several students in a class. It may same marks for more than one student.
+From the following table write a SQL table to find the highest unique marks a student achieved. Return the marks.
