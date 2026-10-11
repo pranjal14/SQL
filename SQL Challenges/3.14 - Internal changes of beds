@@ -1,1 +1,3 @@
 
+In a hostel, each room contains two beds. After every 6 months a student have to change their bed with his or her room-mate.
+From the following tables write a SQL query to find the new beds of the students in the hostel. Return original_bed_id, student_name, bed_id and student_new. 
