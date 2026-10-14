@@ -1,1 +1,2 @@
 
+From the following table write a SQL query to find those distributors who purchased all types of item from the company. Return distributors ids.
