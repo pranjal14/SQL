@@ -1,0 +1,1 @@
+From the following tables write a SQL query to find those directors and actors who worked together at least three or more movies. Return the director and actor name.
