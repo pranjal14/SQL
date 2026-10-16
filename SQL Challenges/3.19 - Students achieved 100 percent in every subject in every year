@@ -1,1 +1,1 @@
-
+From the following tables write a SQL query to find those students who achieved 100 percent in various subjects in every year. Return examination ID, subject name, examination year, number of students.
