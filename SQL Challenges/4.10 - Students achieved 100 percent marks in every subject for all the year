@@ -1,3 +1,39 @@
 
 From the following tables write a SQL query to find those students who achieved 100 percent marks in every subject for all the year. Return subject ID, subject name, students for all year.
 
+CREATE TABLE exam_test (exam_id int not null, subject_id int not null, exam_year int not null, no_of_student int,
+primary key (exam_id,subject_id,exam_year));
+INSERT INTO exam_test VALUES (71,201,2017,5146);
+INSERT INTO exam_test VALUES (72,202,2017,3651);
+INSERT INTO exam_test VALUES (73,202,2018,4501);
+INSERT INTO exam_test VALUES (71,202,2018,5945);
+INSERT INTO exam_test VALUES (73,201,2018,2647);
+INSERT INTO exam_test VALUES (71,201,2018,3545);
+INSERT INTO exam_test VALUES (73,201,2019,2647);
+INSERT INTO exam_test VALUES (72,201,2018,3500);
+INSERT INTO exam_test VALUES (71,203,2017,2500);
+INSERT INTO exam_test VALUES (71,202,2019,2500);
+
+
+CREATE TABLE subject_test (subject_id int not null unique, subject_name varchar(255));
+INSERT INTO subject_test VALUES (201,'Mathematics');
+INSERT INTO subject_test VALUES (202,'Physics');
+INSERT INTO subject_test VALUES (203,'Chemistry');
+
+
+SELECT  s.subject_id, p.subject_name, 
+SUM(s.no_of_student) 'Students for all year'  
+FROM exam_test s 
+JOIN subject_test p 
+ON s.subject_id = p.subject_id
+GROUP BY s.subject_id;
+
+
+
+select s1.subject_id, p.subject_name,s1.exam_year as first_year, s1.no_of_student
+from exam_test s1
+JOIN subject_test p on s1.subject_id = p.subject_id 
+join (select subject_id, min(exam_year) min_yr 
+from exam_test group by subject_id) s2
+on s1.subject_id = s2.subject_id 
+and s1.exam_year = s2.min_yr;
